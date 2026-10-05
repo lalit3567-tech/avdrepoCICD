@@ -4,9 +4,11 @@ name : First Workflow
 
 # set trigger 
 on:
-    # push:
-    #     branches:
-    #         - main
+    # event based trigger
+    push:
+        branches:
+            - main
+    # manual trigger
     workflow_dispatch:
 
 jobs:
